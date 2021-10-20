@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10sp"
+        app:cardElevation="5sp"
+        app:strokeWidth="2sp"
+        app:strokeColor="@color/purple_700"
+        >
+        <ImageButton
+            android:id="@+id/vc_ibtn_logo"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:background="@null"
+            android:src="@drawable/black_bubble"
+            android:alpha="0.3"
+            />
+        <TextView
+            android:id="@+id/vc_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:gravity="start|center_vertical"
+            android:textSize="24sp"
+            android:autoSizeMaxTextSize="40sp"
+            android:autoSizeMinTextSize="24sp"
+            android:autoSizeTextType="uniform"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="5sp"
+            android:clickable="false"
+            android:text="TEST TEST"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

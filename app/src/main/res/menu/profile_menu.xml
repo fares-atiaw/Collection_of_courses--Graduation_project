@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/mp_menu_instructor"
+        android:title="@string/cart"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/mp_menu_center"
+        android:title="@string/cart"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/mp_menu_info"
+        android:title="@string/info"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/mp_menu_login"
+        android:title="@string/login"
+        app:showAsAction="never"
+        />
+
+</menu>

@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">C of C</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="notifications">Notifications</string>
+    <string name="your_notifications">Your Notifications</string>
+    <string name="your_favorites">Your Favorites</string>
+    <string name="current_courses">Current Courses</string>
+    <string name="your_current_courses">Your Current Courses list</string>
+    <string name="watch_later">Watch Later</string>
+    <string name="your_watch_later">Your Watch Later list</string>
+    <string name="cart">Cart</string>
+    <string name="info">Info</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="username">Username</string>
+    <string name="remember_me">Remember me</string>
+    <string name="agree_terms">I Agree with Privacy and policy</string>
+    <string name="forget_password">Forget password</string>
+    <string name="login">Login</string>
+    <string name="donot_have_account">Do not have an account ?</string>
+    <string name="already_have_account">Already have an account ?</string>
+    <string name="email">E-mail</string>
+    <string name="package_no">Package Number #</string>
+    <string name="price_details">Purchase Details</string>
+    <string name="price">Price : </string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="cart_page">Your Cart</string>
+    <string name="total_items">Total items : </string>
+    <string name="total_price">Total price : </string>
+    <string name="currency"> L.E.</string>
+    <string name="ppp">\" L\"</string>
+    <string name="released_date">Release Date</string>
+    <string name="rating">Rating :</string>
+    <string name="following">Following :</string>
+    <string name="address">*Address:</string>
+    <string name="phone">*Phone:</string>
+    <string name="online">*Online: </string>
+    <string name="videos_offer">The first intro videos for free</string>
+    <string name="go_buy">Go buy</string>
+    <string name="cd_description">Description :</string>
+    <string name="cd_intro_components_down">🆓 Intro components ️⤵️</string>
+    <string name="cd_intro_components_up">🆓 Intro components ⤴️</string>
+    <string name="cd_components_down">Components ⤵️</string>
+    <string name="cd_components_up">Components ⤴️</string>
+    <string name="cd_requirements">Requirements :</string>
+    <string name="cd_email">Email : </string>
+    <string name="comment">Comment</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="go">GO</string>
+    <string name="online_courses">Online Courses</string>
+    <string name="offline_courses">Offline Courses</string>
+    <string name="all_online_offline">All (Online + Offline)</string>
+    <string name="helpful_channels_youtube">Helpful Channels (Youtube)</string>
+
+    <string name="purchasing_info1">There are many options for purchasing . Choose what is suitable for you :</string>
+    <string name="purchasing_info2">There are no options except one package which contains the whole course :</string>
+    <string name="signin_first_forCode">You should sign in first to get the *Discount Code*</string>
+    <string name="signin_first_forProfile">You should sign in first to make your profile</string>
+    <string name="signin_first_forCart">You should sign in first to have a cart</string>
+    <string name="signin_first_forNotification">You should sign in first to fill your favorites in your profile</string>
+    <string name="signin_first_forComponent">You should sign in first to start learning and watch the free videos</string>
+    <string name="missing_understand_hint">Write here your impression on this video and your opinion on developing it …</string>
+    <string name="missing_questions_hint">Write here the questions that must be answered in a new video …</string>
+    <string name="options">Options</string>
+    <string name="add_to_watch_later">Add to Watch Later</string>
+    <string name="search">Search</string>
+    <string name="new_">New :</string>
+    <string name="register">Register</string>
+    <string name="pound">L.E</string>
+    <string name="main_categories">Main Categories</string>
+    <string name="my_courses_down">My list of courses ⤵</string>
+    <string name="my_course_up">My list of courses ⤴</string>
+    <string name="favourite_fields">Favourite Fields</string>
+    <string name="upload_a_new_course">Upload a new course 📤</string>
+    <string name="edit_a_course">Edit a course 📑</string>
+    <string name="edit_logo">Edit logo</string>
+    <string name="understand_percentage">How far did you understand from this video ?</string>
+    <string name="missing_to_understand">What is missing to understand better ?</string>
+    <string name="missing_for_new_video">Is this video missing a specific explanation which needs a new video so that you can fully understand it ?</string>
+    <string name="yes_then">⏬</string>
+    <string name="no_it_s_good_2">No, It\'s good 👌</string>
+    <string name="no_it_s_good_1">No, It\'s good</string>
+    <string name="yes">Yes</string>
+    <string name="my_available_courses">My Available Courses</string>
+    <string name="my_cart">My Cart</string>
+    <string name="remove_favorite"><![CDATA[Write the Favorite\'s no. to ]]></string>
+
+
+    <string-array name="usertypes">
+        <item>Student</item>
+        <item>Course Centre</item>
+        <item>Instructor</item>
+    </string-array>
+</resources>

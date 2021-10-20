@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ac_menu_profile"
+        android:icon="@drawable/ic_icon_profile"
+        android:title="@string/profile"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/ac_menu_main_categories"
+        android:title="@string/main_categories"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/ac_menu_info"
+        android:title="@string/info"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/ac_menu_login"
+        android:title="@string/login"
+        app:showAsAction="never"
+        />
+
+</menu>

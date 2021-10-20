@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.MainProfile">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="exitUntilCollapsed"
+                android:fitsSystemWindows="true">
+
+                <ImageView
+                    android:id="@+id/mp_iv_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/s_p"
+                    android:scaleType="centerCrop" />
+
+                <Button
+                    android:id="@+id/mp_btn_editLogo"
+                    android:layout_width="90sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="bottom|end"
+                    android:background="#00000000"
+                    android:padding="0sp"
+                    android:text="@string/edit_logo"
+                    android:textAllCaps="false"
+                    android:textColor="#808080"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp">
+
+                    <TextView
+                        android:id="@+id/mp_tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fares Hassan"
+                        android:textSize="30sp"
+                        android:maxLength="30"
+                        android:layout_marginEnd="10sp"
+                        android:visibility="visible" />
+
+                    <ToggleButton
+                        android:id="@+id/mp_tbtn_name"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:padding="1sp"
+                        android:textOff=""
+                        android:textOn=""
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
+                        android:background="@drawable/ic_baseline_edit_24"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp" />
+
+                    <EditText
+                        android:id="@+id/mp_et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="28sp"
+                        android:maxLength="30"
+                        android:inputType="textPersonName"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp">
+
+                    <TextView
+                        android:id="@+id/mp_tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="000 000 0000"
+                        android:textSize="30sp"
+                        android:maxLength="30"
+                        android:layout_marginEnd="10sp"
+                        android:visibility="visible" />
+
+                    <ToggleButton
+                        android:id="@+id/mp_tbtn_phone"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:padding="1sp"
+                        android:textOff=""
+                        android:textOn=""
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
+                        android:background="@drawable/ic_baseline_edit_24"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp" />
+
+                    <EditText
+                        android:id="@+id/mp_et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="28sp"
+                        android:maxLength="30"
+                        android:inputType="phone"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp">
+
+                    <TextView
+                        android:id="@+id/mp_tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=".... .... ..@ ... .com"
+                        android:textSize="30sp"
+                        android:maxLength="30"
+                        android:layout_marginEnd="10sp"
+                        android:visibility="visible" />
+
+                    <ToggleButton
+                        android:id="@+id/mp_tbtn_email"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:padding="1sp"
+                        android:textOff=""
+                        android:textOn=""
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
+                        android:background="@drawable/ic_baseline_edit_24"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp" />
+
+                    <EditText
+                        android:id="@+id/mp_et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="28sp"
+                        android:maxLength="30"
+                        android:inputType="textEmailAddress"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mp_layout_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp">
+
+                    <TextView
+                        android:id="@+id/mp_tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10sp"
+                        android:autoSizeMaxTextSize="26sp"
+                        android:autoSizeMinTextSize="20sp"
+                        android:autoSizeTextType="uniform"
+                        android:maxLines="2"
+                        android:text="31 street elNaser"
+                        android:textSize="26sp"
+                        android:visibility="visible" />
+
+                    <ToggleButton
+                        android:id="@+id/mp_tbtn_address"
+                        android:layout_width="30sp"
+                        android:layout_height="30sp"
+                        android:padding="1sp"
+                        android:textOff=""
+                        android:textOn=""
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
+                        android:background="@drawable/ic_baseline_edit_24"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp" />
+
+                    <EditText
+                        android:id="@+id/mp_et_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autoSizeMaxTextSize="26sp"
+                        android:autoSizeMinTextSize="20sp"
+                        android:autoSizeTextType="uniform"
+                        android:inputType="textWebEmailAddress"
+                        android:maxLines="2"
+                        android:textSize="24sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mp_layout_studentThings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:layout_marginTop="10sp"
+                    >
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch_language"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5sp"
+                        android:text="عربي"
+                        android:visibility="gone"
+                        android:textSize="20sp"
+                        android:layout_gravity="center"
+                        android:checked="true"
+                        app:thumbTint="@color/purple_700"
+                        app:trackTint="@color/purple_200"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+
+                        <Button
+                            android:id="@+id/mp_btn_favorites"
+                            android:layout_width="220sp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/favourite_fields"
+                            android:layout_marginStart="44sp" />
+
+                        <ImageButton
+                            android:id="@+id/mp_ibtn_notification"
+                            android:layout_width="45sp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#1ADA2020"
+                            android:src="@drawable/ic_baseline_notifications_24"
+                            app:tint="#FAE106" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/mp_btn_currentCourses"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/current_courses" />
+
+                    <Button
+                        android:id="@+id/mp_btn_watchlater"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/watch_later" />
+
+                    <Button
+                        android:id="@+id/mp_btn_cart"
+                        android:layout_width="220sp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/cart" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mp_layout_courses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10sp"
+                    android:layout_gravity="center"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/mp_btn_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5sp"
+                        android:text="@string/upload_a_new_course"
+                        android:textSize="20sp"
+                        android:textAllCaps="false"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="18sp"
+                        android:autoSizeMaxTextSize="20sp"
+                        />
+                    <Button
+                        android:id="@+id/mp_btn_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5sp"
+                        android:text="@string/edit_a_course"
+                        android:textSize="20sp"
+                        android:textAllCaps="false"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="18sp"
+                        android:autoSizeMaxTextSize="20sp"
+                        />
+
+                    <ToggleButton
+                        android:id="@+id/mp_tbtn_mycourses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#FF5722"
+                        android:padding="20sp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textOff="@string/my_courses_down"
+                        android:textOn="@string/my_course_up"
+                        android:textSize="30sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_mycourses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="5sp"
+                        tools:listitem="@layout/course_view"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_margin="10sp"
+                    android:background="#675555"/>
+
+                <LinearLayout
+                    android:id="@+id/mp_layout_as"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/mp_btn_instructor"
+                        android:layout_width="match_parent"
+                        android:layout_height="80sp"
+                        android:padding="0sp"
+                        android:textSize="20sp"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="16sp"
+                        android:text="As\nInstructor"
+                        android:layout_weight="1"
+                        android:layout_margin="5sp"
+                        android:backgroundTint="@color/black"
+                        android:enabled="true"
+                        />
+
+                    <Button
+                        android:id="@+id/mp_btn_center"
+                        android:layout_width="match_parent"
+                        android:layout_height="80sp"
+                        android:padding="0sp"
+                        android:textSize="20sp"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMaxTextSize="20sp"
+                        android:autoSizeMinTextSize="16sp"
+                        android:text="As\nCenter"
+                        android:layout_weight="1"
+                        android:layout_margin="5sp"
+                        android:backgroundTint="@color/black"
+                        android:enabled="true"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
